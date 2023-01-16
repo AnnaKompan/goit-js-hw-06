@@ -13,7 +13,7 @@ const ulElem = document.createElement("ul");
 
 for (const ingredient of ingredients) {
   const liElem = document.createElement("li");
-  liElem.textContent = ingredient);
+  liElem.textContent = ingredient;
   ulElem.appendChild(liElem);
 }
 

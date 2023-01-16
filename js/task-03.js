@@ -14,11 +14,11 @@ const images = [
 ];
 
 const ulElem = document.querySelector(".gallery");
-console.log(ulElem);
 
-const liElem = images.map((image) => {
-  return `<li class="gallery_item"><img class ="gallery_image" src="${image.url}" alt="${image.alt}"/>`;
-});
+const liElem = images
+  .map((image) => {
+    return `<li class="gallery_item"><img class ="gallery_image" src="${image.url}" alt="${image.alt}"/>`;
+  })
+  .join("");
 
-console.log(liElem);
 ulElem.insertAdjacentHTML("afterbegin", liElem);
